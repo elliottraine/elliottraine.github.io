@@ -29,12 +29,8 @@
                  "y":480
                 }, 
                 {
-                 "height":32,
-                 "name":"monster",
-                 "properties":
-                    {
-                     "maxdx":"10",
-                     "right":"true"
+                 
+                     
                     },
                  "type":"monster",
                  "visible":true,
