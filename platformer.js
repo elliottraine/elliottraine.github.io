@@ -162,7 +162,7 @@
     else if (wasright)
       entity.ddx = entity.ddx - friction;
   
-    if (entity.jump && !entity.jumping && !falling) {
+    if (entity.jump && !entity.jumping) {
       entity.ddy = entity.ddy - entity.impulse; // an instant big force impulse
       entity.jumping = true;
     }
