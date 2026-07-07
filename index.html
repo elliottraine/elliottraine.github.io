@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Square Quest</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Square Quest</h1>
+
+  <div id="game-wrapper">
+    <canvas id="gameCanvas" width="800" height="400"></canvas>
+
+    <div id="hud">Treasure: <span id="scoreDisplay">0</span></div>
+
+    <!-- Hidden until the win condition is coded in game.js (see TODO 7) -->
+    <div id="winMessage" class="hidden">You collected all the treasure!</div>
+  </div>
+
+  <!-- On-screen controls for phones/tablets. They work by pressing/releasing
+       just like keyboard keys do -- see the bindTouchButton() function in game.js -->
+  <div id="touch-controls">
+    <button id="btn-left" class="touch-btn">◀</button>
+    <button id="btn-jump" class="touch-btn touch-btn-jump">JUMP</button>
+    <button id="btn-right" class="touch-btn">▶</button>
+  </div>
+
+  <p id="instructions">
+    Keyboard: Arrow keys or A / D to move, Space or Up to jump.<br>
+    On a phone or tablet: use the buttons above.
+  </p>
+
+  <script src="game.js"></script>
+</body>
+</html>
