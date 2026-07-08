@@ -11,7 +11,7 @@ const winMessage = document.getElementById("winMessage");
 
 // ---------- Tunable numbers ----------
 // TODO 1: Change PLAYER_COLOR to any CSS color ("blue", "#2ecc71", etc.)
-const PLAYER_COLOR = "#000000";
+const PLAYER_COLOR = "blue";
 // TODO 3: These three numbers control how the game FEELS. Try changing
 // one at a time and reloading the page to see what each one does.
 const GRAVITY = 0.6;      // how fast the player falls
@@ -36,8 +36,8 @@ const player = {
 // TODO 4: Add another platform! Copy one of the lines below and change
 // the numbers. x/y is the top-left corner, in pixels.
 const platforms = [
-  { x: 0, y: 368, width: 800, height: 32, color: "#000000" }, // the ground
-  { x: 200, y: 280, width: 120, height: 16, color: "#000000" },
+  { x: 0, y: 368, width: 800, height: 32, color: "#5a3921" }, // the ground
+  { x: 200, y: 280, width: 120, height: 16, color: "#5a3921" },
   { x: 420, y: 220, width: 120, height: 16, color: "#5a3921" },
   { x: 620, y: 300, width: 100, height: 16, color: "#5a3921" },
 ];
