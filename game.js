@@ -11,7 +11,7 @@ const winMessage = document.getElementById("winMessage");
 
 // ---------- Tunable numbers ----------
 // TODO 1: Change PLAYER_COLOR to any CSS color ("blue", "#2ecc71", etc.)
-const PLAYER_COLOR = ["#0000ff"];
+const PLAYER_COLOR = "#0000ff";
 // TODO 3: These three numbers control how the game FEELS. Try changing
 // one at a time and reloading the page to see what each one does.
 const GRAVITY = 0.6;      // how fast the player falls
