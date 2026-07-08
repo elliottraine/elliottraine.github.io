@@ -16,7 +16,7 @@ const PLAYER_COLOR = "blue";
 // one at a time and reloading the page to see what each one does.
 const GRAVITY = 0.6;      // how fast the player falls
 const MOVE_SPEED = 4;     // how fast the player walks
-const JUMP_POWER = -100;   // how high the player jumps (more negative = higher)
+const JUMP_POWER = -50;   // how high the player jumps (more negative = higher)
 
 // ---------- Player ----------
 const player = {
