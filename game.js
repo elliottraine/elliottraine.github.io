@@ -37,7 +37,7 @@ const player = {
 // the numbers. x/y is the top-left corner, in pixels.
 const platforms = [
   { x: 0, y: 368, width: 800, height: 32, color: "#5a3921" }, // the ground
-  { x: 200, y: 280, width: 120, height: 16, color: "#000000" },
+  { x: 200, y: 280, width: 120, height: 16, color: "#5a3921" },
   { x: 420, y: 220, width: 120, height: 16, color: "#5a3921" },
   { x: 620, y: 300, width: 100, height: 16, color: "#5a3921" },
 ];
