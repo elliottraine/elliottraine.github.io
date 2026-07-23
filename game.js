@@ -11,19 +11,20 @@ const winMessage = document.getElementById("winMessage");
 
 // ---------- Tunable numbers ----------
 // TODO 1: Change PLAYER_COLOR to any CSS color ("blue", "#2ecc71", etc.)
-const PLAYER_COLOR = "#000000";
+const PLAYER_COLOR = "BLUE";
 // TODO 3: These three numbers control how the game FEELS. Try changing
 // one at a time and reloading the page to see what each one does.
-const GRAVITY = 0.6;      // how fast the player falls
-const MOVE_SPEED = 4;     // how fast the player walks
-const JUMP_POWER = -20;   // how high the player jumps (more negative = higher)
+const GRAVITY = 0.6    ;      // how fast the player falls
+const MOVE_SPEED = 10
+;     // how fast the player walks
+const JUMP_POWER = -20  ;   // how high the player jumps (more negative = higher)
 
 // ---------- Player ----------
 const player = {
   x: 50,
   y: 50,
   // TODO 2: Change width/height to make the player bigger or smaller.
-  width: 32,
+  width: 45,
   height: 32,
   vx: 0,
   vy: 0,
@@ -33,13 +34,17 @@ const player = {
 };
 
 // ---------- Level: platforms ----------
-// TODO 4: Add another platform! Copy one of the lines below and change
+// TODO 4: Add another platform! Copy one of the lines below and change 
 // the numbers. x/y is the top-left corner, in pixels.
 const platforms = [
-  { x: 0, y: 368, width: 800, height: 32, color: "#5a3921" }, // the ground
-  { x: 200, y: 280, width: 120, height: 16, color: "#5a3921" },
-  { x: 420, y: 220, width: 120, height: 16, color: "#5a3921" },
-  { x: 620, y: 300, width: 100, height: 16, color: "#5a3921" },
+  { x: 0, y: 368, width: 800, height: 32, color: "#bc6635" }, // the ground
+  { x: 200, y: 280, width: 120, height: 16, color: "#BC6635" },
+  { x: 420, y: 220, width: 120, height: 16, color: "#BC6635" },
+  { x: 620, y: 3, width: 100, height: 16, color: "#BC6635" },
+  { x: 620, y: 70, width: 100, height: 16, color: "#BC6635" },
+  { x: 620, y: 150, width: 100, height: 16, color: "#BC6635" },
+   { x: 620, y: 10, width: 100, height: 16, color: "#BC6635" },
+     
 ];
 
 // ---------- Level: treasure ----------
@@ -48,13 +53,23 @@ const platforms = [
 const treasures = [
   { x: 240, y: 240, size: 16, collected: false },
   { x: 460, y: 180, size: 16, collected: false },
+  { x: 660, y: 100, size: 16, collected: false },
+  { x: 670, y: 60, size: 16, collected: false },
+   { x: 680, y: 465, size: 16, collected: false },
+   { x: 680, y: 465, size: 16, collected: false },
+   
 ];
+
+     
+  
+
+
 
 // ---------- Level: enemies ----------
 // TODO 8: Give an enemy a starting vx (velocity) like 2, then make it
 // patrol back and forth between minX and maxX in the update loop below.
 const enemies = [
-  { x: 640, y: 268, width: 28, height: 28, vx: 0, minX: 620, maxX: 700, color: "#8e44ad" },
+  { x: 770, y: 340, width: 28, height: 28, vx: 0, minX: 620, maxX: 700, color: "#d51010" },
 ];
 
 let score = 0;
@@ -219,7 +234,7 @@ function update() {
 function draw() {
   // Background / sky
   // TODO 5: change this color to whatever sky (or cave, or space) you want.
-  ctx.fillStyle = "#87ceeb";
+  ctx.fillStyle = "#ffea00";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   // Platforms
